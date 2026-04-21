@@ -221,7 +221,7 @@ $(document).ready(function() {
 		}
 		//восстанавливаем режимы
 		if (globSettings['session']){
-			actSave=globSettings['session']['actSave'];
+			actSave=globSettings['session']['actSave'] || 0;
 			if(actSave){
 				invIndex=globSettings['session']['invIndex'];
 				keymove=globSettings['session']['keymove'];			
